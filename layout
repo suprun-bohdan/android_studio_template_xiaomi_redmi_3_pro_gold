@@ -1,0 +1,60 @@
+parts {
+  device {
+    display {
+      width 662
+      height 1175
+      x 0
+      y 0
+    }
+  }
+  portrait {
+    background {
+      image port_back.webp
+    }
+    foreground {
+    }
+  }
+}
+layouts {
+  portrait {
+    width 732
+    height 1460
+    event EV_SW:0:1
+    part1 {
+      name portrait
+      x 0
+      y 0
+    }
+    part2 {
+      name device
+      x 32
+      y 131
+    }
+  }
+}
+buttons {
+  key {
+    name "Back"
+    event EV_KEY:158:1
+    x 470
+    y 1150
+    width 90
+    height 90
+  }
+  key {
+    name "Home"
+    event EV_KEY:102:1
+    x 310
+    y 1150
+    width 90
+    height 90
+  }
+  key {
+    name "Menu"
+    event EV_KEY:139:1
+    x 150
+    y 1150
+    width 90
+    height 90
+  }
+}
